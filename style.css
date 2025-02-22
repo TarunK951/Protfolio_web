@@ -265,6 +265,7 @@
   .head {
     /* flex-direction: column; */
     align-items: center;
+    justify-content: space-between;
     display: flex;
     height: auto;
     padding: 20px;
@@ -274,6 +275,7 @@
   }
   .menu-button {
     display: block;
+    padding-left: 30%;
   }
 
   .head .a {
@@ -344,8 +346,8 @@
         img {
           position: absolute;
           z-index: -1;
-          width: 550px;
-          bottom: 150px;
+          width: 450px;
+          bottom: 100px;
         }
       }
       .detail {
