@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarun_portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header nav bar -->
+    <section class="head">
+      <img class="logo" src="pics/Mylogo.png" alt="" />
+      <button class="menu-button">
+        <img src="./pics/menu-bar.png" alt="Menu" />
+      </button>
+      <div class="a">
+        <a href="#aboutMe">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#Projects">Projects</a>
+        <a href="#contactMe">Contact Me</a>
+        <a class="resume-link" href="./pics/TarunResume.pdf" download
+          ><img src="./pics/resumedownload.png" alt=""
+        /></a>
+      </div>
+      <button class="resume-button">
+        <a href="./pics/TarunResume.pdf" download>
+          <img src="./pics/resumedownload.png" alt="" />
+        </a>
+      </button>
+    </section>
+    <!-- header content -->
+    <section class="headMain">
+      <div class="textCon">
+        <div class="text">
+          <div class="intro">
+            <p>HELLO I'AM TARUN</p>
+            <p>Fronted Devloper</p>
+            <p>Based in India</p>
+          </div>
+          <div class="innerPic">
+            <img src="./pics/laptop.png" alt="" />
+          </div>
+          <div class="detail">
+            <p>
+              "I'm a passionate Frontend Developer Fresher with skills in HTML,
+              CSS, JavaScript, and React. I love building responsive and
+              user-friendly web interfaces while continuously learning new
+              technologies!"
+            </p>
+          </div>
+        </div>
+        <div class="social">
+          <button class="fb">
+            <a
+              href="https://www.facebook.com/kamana.tarun.7/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./pics/facebook.png" alt="" />
+            </a>
+          </button>
+          <button class="btn">
+            <a
+              href="https://x.com/its_tarun_roy?s=21"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./pics/twitter.png" alt="" />
+            </a>
+          </button>
+          <button class="btn">
+            <a
+              href="https://www.reddit.com/u/TARUN_KAMANA/s/vd1hT6QBOj"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./pics/reddit.png" alt="" />
+            </a>
+          </button>
+          <button class="btn">
+            <a
+              href="https://discordapp.com/users/its_tarun_goud"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./pics/discord.png" alt="" />
+            </a>
+          </button>
+
+          <button class="btn">
+            <a
+              href="https://discordapp.com/users/its_tarun_goud"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img class="git" src="./pics/github.png" alt="" />
+            </a>
+          </button>
+          <button class="btn">
+            <a
+              href="https://discordapp.com/users/its_tarun_goud"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./pics/linkedin.png" alt="" />
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="img">
+        <img src="./pics/laptop.png" alt="" />
+      </div>
+    </section>
+    <script>
+      const menuButton = document.querySelector(".menu-button");
+      const head = document.querySelector(".head");
+
+      menuButton.addEventListener("click", () => {
+        head.classList.toggle("show-menu");
+      });
+    </script>
+  </body>
+</html>
