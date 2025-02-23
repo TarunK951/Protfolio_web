@@ -625,7 +625,7 @@
 
         img {
           position: absolute;
-          bottom: -40px;
+          bottom: 10px;
           left: -20px;
           width: 400px;
           height: 300px;
@@ -759,7 +759,6 @@
       }
 
       .Proimg {
-        padding-top: 40px;
         width: 100%;
         display: flex;
         justify-content: space-around;
