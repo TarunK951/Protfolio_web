@@ -34,7 +34,7 @@
         <div class="text">
           <div class="intro">
             <p>HELLO I'M <span class="name">TARUN</span></p>
-            <p>Fronted Developer</p>
+            <p>Frontend Developer</p>
             <p>Based in India</p>
           </div>
           <div class="innerPic">
@@ -736,11 +736,30 @@
         </div>
         <div class="ConBody">
           <div class="ContactInputs">
-            <input placeholder="Your Name" class="contactBox" />
-            <input placeholder="Email" class="contactBox" />
-            <input placeholder="Your website" class="contactBox" />
-            <input placeholder="How can I help?" class="helpBox" />
-            <button class="touch">Get in Touch</button>
+            <form id="contactForm" class="contactForm">
+              <input id="name" type="text" placeholder="Your Name" required />
+              <input
+                id="email"
+                type="email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                id="website"
+                type="text"
+                placeholder="Your Website (Optional)"
+              />
+              <div>
+                <textarea
+                  id="message"
+                  placeholder="Your Message"
+                  required
+                  class="helpBox"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="touch">Send Message</button>
+            </form>
           </div>
           <div class="ContactText">
             <div class="conTitle">
@@ -754,8 +773,10 @@
               </p>
             </div>
             <div class="address">
-              <a style="color: black" email>satyatatarun.951@gmail.com</a>
-              <p>9391954467</p>
+              <a style="color: black; text-decoration: none" email
+                >satyatatarun.951@gmail.com</a
+              >
+              <p style="color: black">9391954467</p>
             </div>
           </div>
         </div>
@@ -842,34 +863,7 @@
       <div class="blank">.</div>
     </section>
 
-    <script>
-      const menuButton = document.querySelector(".menu-button");
-      const head = document.querySelector(".navBar");
-
-      menuButton.addEventListener("click", () => {
-        head.classList.toggle("show-menu");
-      });
-
-      document.querySelectorAll(".icon").forEach((button) => {
-        button.addEventListener("touchstart", () => {
-          button.style.animation = "rotateCube 1s linear infinite";
-        });
-
-        button.addEventListener("touchend", () => {
-          button.style.animation = "none";
-        });
-      });
-      document.querySelectorAll(".icon").forEach((button) => {
-        button.addEventListener("touchstart", () => {
-          button.classList.add("rotating"); // Start Shine Effect
-          button.style.animation = "rotateCube 1s linear infinite"; // Start Rotation
-        });
-
-        button.addEventListener("touchend", () => {
-          button.classList.remove("rotating"); // Stop Shine Effect
-          button.style.animation = "none"; // Stop Rotation
-        });
-      });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="js.js"></script>
   </body>
 </html>
