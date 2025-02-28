@@ -583,6 +583,13 @@ body {
       justify-content: space-around;
       gap: 20px;
 
+      .contactForm {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-around;
+        gap: 20px;
+      }
       input {
         width: 70%;
         padding: 10px;
@@ -600,6 +607,12 @@ body {
       .helpBox {
         height: 80px;
         text-align: start;
+        width: 70%;
+      }
+      button {
+        background-color: black;
+        width: 50px;
+        color: #ffffff;
       }
     }
 
@@ -1516,11 +1529,11 @@ body {
         padding-left: 0;
         width: auto;
         justify-content: space-around;
-        gap: 20px;
-        height: 450px;
+        gap: 23px;
+        /* height: 450px; */
 
         input {
-          width: 79%;
+          width: 80%;
           padding: 10px;
         }
         .touch {
